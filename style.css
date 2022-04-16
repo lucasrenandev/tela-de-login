@@ -14,9 +14,9 @@
     width: 100vw;
     height: 100vh;
     background: #201b2c;
-    display: flex; /* display flex = elementos lado a lado */
-    justify-content: center; /* justify-content = justificar elementos na horizontal (eixo X) */
-    align-items: center; /* align-items = justificar elementos na vertical (eixo Y) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .left-login {
