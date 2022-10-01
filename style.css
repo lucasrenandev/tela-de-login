@@ -27,7 +27,7 @@ section {
     width: 100%;
     height: 100%;
     display: flex;
-    flex-flow: row wrap;
+    align-items: center;
 }
 
 /* ===== LEFTSIDE LOGIN ===== */
@@ -41,7 +41,6 @@ section {
 }
 
 .leftside-content {
-    text-align: center;
     padding: 20px;
 }
 
@@ -65,16 +64,18 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 20px;
 }
 
 .card-login {
     background-color: #2F2840;
-    width: 500px;
+    width: 450px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    justify-content: center;
+    gap: 20px;
     border-radius: 20px;
-    padding: 50px 30px;
+    padding: 40px 30px;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.103);
 }
 
@@ -87,9 +88,9 @@ section {
 }
 
 .card-login button {
-    width: 350px;
+    width: 100%;
     height: 50px;
-    display: block;
+    display: inline-block;
     margin: auto;
     border-radius: 10px;
     border: none;
@@ -100,7 +101,7 @@ section {
     color: #2b134b;
     text-transform: uppercase;
     cursor: pointer;
-    box-shadow: 0px 10px 40px -12px #00ff8052;
+    box-shadow: 0px 10px 40px -12px #00FF88;
 }
 
 .label-input {
@@ -108,7 +109,7 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
     position: relative;
 }
 
@@ -140,7 +141,50 @@ section {
 .fa-eye {
     position: absolute;
     bottom: 16px;
-    right: 30px;
+    right: 20px;
     cursor: pointer;
     color: rgba(0, 0, 0, 0.788);
+}
+
+@media (max-width: 1100px) {
+
+    body {
+        overflow: visible;
+        height: 100%;
+        padding-bottom: 30px;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    #leftside-login {
+        width: 100%;
+    }
+
+
+    .leftside-content img {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .leftside-content h1 {
+        text-align: center;
+    }
+
+    #rightside-login {
+        width: 100%;
+    }
+
+    .card-login {
+        width: 100%;
+    }
+
+    .fa-eye {
+        visibility: hidden;
+    }
+
 }
