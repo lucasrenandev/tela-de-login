@@ -146,6 +146,8 @@ section {
     color: rgba(0, 0, 0, 0.788);
 }
 
+/* ===== RESPONSIVE ===== */
+
 @media (max-width: 1100px) {
 
     body {
